@@ -503,7 +503,7 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  outline: none;
+  outline: transparent;
 }
 
 .social-link:hover,
@@ -538,6 +538,8 @@ body {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+
+  outline: transparent;
 }
 
 .clients-link:hover,
@@ -583,16 +585,23 @@ body {
 
 .project-link {
   position: relative;
+  overflow: hidden;
 
   display: flex;
   flex-direction: column;
   text-decoration: none;
+
+  outline: transparent;
 }
 
 .project-link:hover,
 .project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project-link:hover .project-label {
+  transform: translateY(0);
 }
 
 .project-title {
@@ -610,10 +619,18 @@ body {
 
 .project-label {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 294px;
+  height: 100%;
+  /* height: 294px; */
 
   padding: 63px 24px;
+
+  transform: translateY(100%);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   background: rgba(33, 150, 243, 0.9);
 }
