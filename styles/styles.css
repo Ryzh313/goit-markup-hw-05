@@ -77,6 +77,9 @@ body {
 
 .link {
   text-decoration: none;
+
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*========== Загальні стилі =========== */
 
@@ -206,6 +209,9 @@ body {
 .link-map:hover,
 .link-map:focus {
   color: var(--accent-blue-color);
+
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link {
@@ -215,6 +221,9 @@ body {
   line-height: 1.71;
   font-style: normal;
   letter-spacing: 0.03em;
+
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:hover,
@@ -251,6 +260,9 @@ body {
   border-radius: 50%;
   outline: none;
   background: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-icon-footer {
   fill: var(--primery-white-color);
@@ -261,10 +273,6 @@ body {
   background-color: var(--accent-blue-color);
 }
 
-.social-link-footer:hover .social-icon,
-.social-link-footer:focus .social-icon {
-  fill: var(--primery-white-color);
-}
 /*========== Верхня лінія / Футер ========== */
 
 /*= = = = = CSS index.html = = = = = */
@@ -282,10 +290,6 @@ body {
   background-color: #c4c4c4;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.container-hero {
-  dispay: flex;
 }
 
 .hero-title {
@@ -323,6 +327,9 @@ body {
   letter-spacing: 0.06em;
 
   cursor: pointer;
+
+  transition: background-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -504,6 +511,9 @@ body {
   height: 44px;
   border-radius: 50%;
   outline: transparent;
+
+  transition: background-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
@@ -518,6 +528,9 @@ body {
 
 .social-icon {
   fill: #afb1b8;
+
+  transition: fill 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ========= Наша команда ========= */
@@ -540,15 +553,21 @@ body {
   border-radius: 4px;
 
   outline: transparent;
+
+  transition: border-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
 .clients-link:focus {
-  border: 1px solid var(--accent-blue-color);
+  border-color: var(--accent-blue-color);
 }
 
 .clients-icon {
   fill: #afb1b8;
+
+  transition: fill 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover .clients-icon,
@@ -594,6 +613,9 @@ body {
   text-decoration: none;
 
   outline: transparent;
+
+  transition: box-shadow 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-link:hover,
@@ -679,6 +701,9 @@ body {
   letter-spacing: 0.03em;
 
   cursor: pointer;
+
+  transition: box-shadow 250ms, color 250ms, background-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-button:hover,
