@@ -486,6 +486,7 @@ body {
 
 .container-card-info {
   padding: 30px;
+  background-color: var(--primery-white-color);
   /* display: flex;
   flex-direction: column;
   align-items: center;
